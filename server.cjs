@@ -6,7 +6,11 @@ const {ObjectId} =require('mongodb')
 const cors =require('cors')
 
 const app = express()
-app.use(cors())
+app.use(cors({origin:"*",
+methods:["GET","POST","PUT","DELETE"],
+origin:["X-Api-Key"," X-Requested-With", "Content-Type", "Accept, Authorization"],
+credentials:true
+}));
 app.use(bodyParser.json())
 
 let db

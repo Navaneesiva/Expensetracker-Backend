@@ -1,4 +1,4 @@
-fetch("http://localhost:7000/data", { method:
-"PUT",credentials: "include" })
-.then(res => res.json())
-.then(data => console.log(data))
+// fetch("https://expresstracker-yek7.onrender.com", { method:
+// "PUT",credentials: "include" })
+// .then(res => res.json())
+// .then(data => console.log(data))
